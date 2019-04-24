@@ -1,23 +1,23 @@
 module.exports = {
   server: {
-    appId: process.env.APP_ID || 'egachi',
-    masterKey: process.env.MASTER_KEY || 'Passw0rd123456',
-    databaseURI: process.env.DATABASE_URI || 'mongodb://********************@edisga.documents.azure.com:10255/dev?ssl=true&replicaSet=globaldb',
-    serverURL: (process.env.SERVER_URL || 'https://edisga-parse.azurewebsites.net') + '/parse',
+    appId: process.env.APP_ID || 'username',
+    masterKey: process.env.MASTER_KEY || '*******',
+    databaseURI: process.env.DATABASE_URI || 'mongodb://********************@[server].documents.azure.com:10255/[dbname]?ssl=true&replicaSet=globaldb',
+    serverURL: (process.env.SERVER_URL || 'https://[webappname].azurewebsites.net') + '/parse',
   },
   dashboard: {
     apps: [
       {
-        serverURL: (process.env.SERVER_URL || 'https://edisga-parse.azurewebsites.net') + '/parse',
-        appId: process.env.APP_ID || 'egachi',
-        masterKey: process.env.MASTER_KEY || 'Passw0rd123456',
+        serverURL: (process.env.SERVER_URL || 'https://[webappname].azurewebsites.net') + '/parse',
+        appId: process.env.APP_ID || 'username',
+        masterKey: process.env.MASTER_KEY || '**********',
         appName: 'Parse Server Azure' 
       }
     ],
     users: [ 
       { 
-        user: process.env.APP_ID || 'egachi',
-        pass: process.env.MASTER_KEY || 'Passw0rd123456',
+        user: process.env.APP_ID || 'username',
+        pass: process.env.MASTER_KEY || '********',
       } 
     ] 
   },
