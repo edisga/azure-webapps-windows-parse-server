@@ -6,7 +6,7 @@ module.exports = {
     serverURL: (process.env.SERVER_URL || 'https://edisga-parse.azurewebsites.net') + '/parse',
   },
   dashboard: {
-    allowInsecureHTTP: false,
+    allowInsecureHTTP: true,
     apps: [
       {
         serverURL: (process.env.SERVER_URL || 'https://edisga-parse.azurewebsites.net') + '/parse',
