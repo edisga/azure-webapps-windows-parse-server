@@ -6,7 +6,7 @@ var url = require('url');
 var config = parseServerConfig(__dirname);
 
 // Modify config as necessary before initializing parse server & dashboard
-var options = { allowInsecureHTTP: false };
+var options = { allowInsecureHTTP: true };
 var app = express();
 app.use('/public', express.static(__dirname + '/public'));
 app.use('/parse', new ParseServer(config.server));
