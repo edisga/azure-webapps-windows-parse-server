@@ -30,3 +30,4 @@ node_modules
 *~
 
 local.js
+package-lock.js
