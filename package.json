@@ -1,6 +1,6 @@
 {
   "name": "parse-server-azure-managed",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Parse Server on Azure Managed Services",
   "main": "index.js",
   "repository": {
